@@ -1,0 +1,37 @@
+{
+  "project": "amazon_clone_ui",
+  "run_id": "run-20260319",
+  "timestamp": "2026-03-19T02:12:00Z",
+  "scenarios": [
+    {
+      "name": "catalog_and_search",
+      "campaign": "amazon-clone-full",
+      "status": "PASS",
+      "pass_signal": "Products displayed, search returns results"
+    },
+    {
+      "name": "cart_mutation",
+      "campaign": "amazon-clone-full",
+      "status": "PASS",
+      "pass_signal": "Add/update/remove cart items works"
+    },
+    {
+      "name": "checkout_completion",
+      "campaign": "amazon-clone-full",
+      "status": "PASS",
+      "pass_signal": "Checkout form validates, order created"
+    },
+    {
+      "name": "e2e_confirmation",
+      "campaign": "amazon-clone-full",
+      "status": "PASS",
+      "pass_signal": "Complete flow: browse->cart->checkout->confirmation"
+    }
+  ],
+  "artifacts": [
+    "evidence/final_order_confirmation.png",
+    "evidence/amazon_clone_flow.webm"
+  ],
+  "summary": "All 4 scenarios PASS. UI-only Amazon clone implementation complete with evidence.",
+  "pass_rate": 100
+}
